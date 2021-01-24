@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* @layer base {
+	h1 {
+		@apply leading-leading-1.4 tracking-tracking-0.75 font-poppins font-semibold text-4xl;
+	}
+	,
+	h2 {
+		@apply leading-leading-1.4 tracking-tracking-0.75 font-poppins font-normal text-2xl;
+	}
+	,
+	h3 {
+		@apply leading-leading-1.4 tracking-tracking-0.75 font-poppins font-semibold text-lg;
+	}
+	h4 {
+		@apply leading-leading-1.4 tracking-tracking-0.75 font-poppins font-normal text-sm;
+	}
+} */
+
+@layer components {
+    .normal-text {
+        @apply leading-leading-1.6 tracking-tracking-0.3px font-poppins font-normal text-base;
+    }
+    .sub-text {
+        @apply leading-normal tracking-tracking-0.3px font-poppins font-normal text-13px;
+    }   
+
+    
+
+}
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+		"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+		"Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
